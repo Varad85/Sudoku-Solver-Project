@@ -37,3 +37,6 @@ class Board:
             except ValueError:
                 pass
         return None
+    
+    def valid_in_row(self, row, num):
+        return num not in self.board[row]
