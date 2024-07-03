@@ -77,3 +77,13 @@ class Board:
 
         return False
     
+    def solve_sudoku(board):
+        gameboard = Board(board)
+        print(f'\nPuzzle to solve:\n{gameboard}')
+        if gameboard.solver():
+            print('\nSolved puzzle:')
+            print(gameboard)
+
+        else:
+            print('\nThe provided puzzle is unsolvable.')
+        return gameboard
